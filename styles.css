@@ -1,0 +1,55 @@
+body {
+  font-family: "Assistant", sans-serif;
+  color: white;
+}
+.bg {
+  background-image: url("./assets/darkBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  width: 20%;
+  height: 15vh;
+}
+.contextDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 420%;
+  font-weight: 700;
+  height: 5vh;
+}
+p {
+  width: 22%;
+  align-items: center;
+  text-align: center;
+  font-size: 170%;
+}
+input[type="text"] {
+  width: 200%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitButton {
+  background-color: #0080fd;
+  width: 140%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-top: 15%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+  border: transparent;
+  font-size: 130%;
+  font-weight: 700;
+}
