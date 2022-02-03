@@ -22,7 +22,7 @@ async function addUser(email,phone_number,name){
         .then((data) => {
           console.log(data);
         });
-    document.location.href = `https://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`,true;
+    document.location.replace = `https://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`,true;
     return true;
 }
 
