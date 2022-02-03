@@ -8,8 +8,6 @@ window.onload = function(){
     }
 }
 
-
-
 async function addUser(email,phone_number,name){
     let url = `https://botbenda.appspot.com/addUserWeb?phone=${phone_number}&name=${name}&mail=${email}`;
     const options = {
@@ -19,7 +17,7 @@ async function addUser(email,phone_number,name){
           "Content-Type": "application/json;charset=UTF-8",
         }
       };
-      fetch(url, options)
+      await fetch(url, options)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
