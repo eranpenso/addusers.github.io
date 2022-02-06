@@ -1,4 +1,3 @@
-const HTTP = new XMLHttpRequest();
 const button = document.getElementById("submit_button");
 
 window.onload = function(){
@@ -8,26 +7,8 @@ window.onload = function(){
     }
 }
 
-async function addUser(email,phone_number,name){
-    let url = `https://botbenda.appspot.com/addUserWeb?phone=${phone_number}&name=${name}&mail=${email}`;
-    const options = {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json;charset=UTF-8",
-        }
-      };
-      await fetch(url, options)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-        });
-    document.location.replace = `https://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`,true;
-    return true;
-}
 
-
-button.addEventListener("click",async function(){
+button.addEventListener("click",async function(e){
     let email = document.getElementById("mail").value;
     let phone_number = document.getElementById("phoneNumber").value;
     let name = document.getElementById("name").value;
@@ -50,8 +31,11 @@ button.addEventListener("click",async function(){
         return;
     }
 
-    await addUser(email,phone_number,name).then(function(){
-        console.log("ADDED")
-    });   
+    window.location = `http://api.whatsapp.com/send?phone=972502332823&text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8B`;
+    
+    let url = `https://botbenda.appspot.com/addUserWeb?phone=${phone_number}&name=${name}&mail=${email}`;
+    await fetch((url),{method:"GET"})
+
+    return;
 });
 
