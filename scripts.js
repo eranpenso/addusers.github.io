@@ -2,8 +2,8 @@ const button = document.getElementById("submit_button");
 
 window.onload = function(){
     if(!document.referrer.includes("paypal")){
-        alert("You are not allowed to access this page");
-        //document.getElementById("submit_button").disabled = true;
+        alert("הדף זמין רק לאחר תשלום!");
+        document.getElementById("submit_button").disabled = true;
     }
 }
 
