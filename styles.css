@@ -64,14 +64,20 @@ form {
   }
 }
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary {
-    width: 100%;
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 170%;
+    font-weight: 700;
+    height: 5vh;
   }
-  #secondary {
-    width: 100%;
-    margin: 0;
-    border: none;
+  p {
+    width: 28%;
+    align-items: center;
+    text-align: center;
+    font-size: 70%;
+  }
+  img {
+    width: 35%;
+    height: 15vh;
   }
 }
