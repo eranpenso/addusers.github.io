@@ -71,13 +71,16 @@ form {
     height: 5vh;
   }
   p {
-    width: 28%;
+    width: 30%;
     align-items: center;
     text-align: center;
     font-size: 70%;
   }
   img {
-    width: 35%;
+    width: 40%;
     height: 15vh;
+  }
+  .bg {
+    height: 100vh;
   }
 }
