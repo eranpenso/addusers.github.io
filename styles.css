@@ -68,6 +68,7 @@ form {
   h1 {
     font-size: 170%;
     font-weight: 700;
+    color:red;
     height: 5vh;
   }
   p {
