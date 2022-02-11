@@ -85,7 +85,7 @@ form {
   }
   input[type="text"] {
     width: 240%;
-    color:red;
+    color: red;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -94,8 +94,9 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
-  
+
   .submitButton {
     background-color: #0080fd;
     width: 180%;
