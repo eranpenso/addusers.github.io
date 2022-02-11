@@ -64,20 +64,23 @@ form {
   }
 } */
 
-@media screen and (max-width: 350px) {
+@media only screen and (max-width: 1000px) {
   h1 {
-    font-size: 170%;
+    font-size: 7rem;
     font-weight: 700;
     height: 5vh;
+    width: 100vw;
+    text-align: center;
   }
   p {
-    width: 40%;
+    width: 60%;
     align-items: center;
     text-align: center;
-    font-size: 70%;
+    font-size: 3rem;
+    margin-bottom: 50%;
   }
   img {
-    width: 50%;
+    width: 40%;
     height: 15vh;
   }
   .bg {
@@ -86,6 +89,9 @@ form {
   input[type="text"] {
     width: 240%;
     color: red;
+    width: 140%;
+    height: 2.5vh;
+    font-size: 1.5rem;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -99,7 +105,8 @@ form {
 
   .submitButton {
     background-color: #0080fd;
-    width: 180%;
+    width: 130%;
+    height: 4vh;
     padding: 12px 20px;
     margin: 8px 0;
     margin-top: 15%;
@@ -108,7 +115,7 @@ form {
     color: white;
     border-radius: 2px;
     border: transparent;
-    font-size: 130%;
+    font-size: 2rem;
     font-weight: 700;
   }
 }
