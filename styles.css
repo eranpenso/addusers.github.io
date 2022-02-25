@@ -1,4 +1,3 @@
-
 body {
   font-family: "Assistant";
   color: white;
@@ -6,7 +5,6 @@ body {
 @font-face {
   font-family: "Assistant";
   src: url("assets/static/Assistant-Light.ttf");
-      
 }
 .bg {
   background-image: url("./assets/darkBG.jpg");
@@ -58,6 +56,19 @@ form {
   border: transparent;
   font-size: 130%;
   font-weight: 700;
+}
+
+.langSelect {
+  margin-right: 92%;
+  margin-top: 1%;
+  width: 7%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
 }
 /* Media Queries: Tablet Landscape
 @media screen and (max-width: 1060px) {
@@ -120,5 +131,18 @@ form {
     border: transparent;
     font-size: 2.5rem;
     font-weight: 700;
+  }
+
+  .langSelect {
+    margin-right: 92%;
+    margin-top: 1%;
+    width: 20%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
   }
 }
